@@ -34,7 +34,6 @@ const employees = [
 
 console.log('array of employee data: ',  employees );
 
-
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
 // This problem is massive! Break the problem down, take small steps, and test as you go.
