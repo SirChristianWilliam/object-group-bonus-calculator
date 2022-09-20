@@ -39,7 +39,7 @@ console.log('array of employee data: ',  employees );
 // This problem is massive! Break the problem down, take small steps, and test as you go.
 // What is the fewest lines of code I can write and test to get just a little closer?
 
-// This is not a race. Everyone on your team should understand what is happening.
+// This is a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
 
@@ -47,10 +47,30 @@ console.log('array of employee data: ',  employees );
 
 // This function will calculate 1 employee's bonus!
 //
-function calculateIndividualEmployeeBonus( employee ) {  
+function calculateIndividualEmployeeBonus( employee, name) {  
   // your logic here
-  
-  
-  // return new object with bonus results
+  let newObj = [];
+   for(let x of employee) {
+    console.log(x);
+    if(name === x.name) {
+      let bonusCalc = {
+        fname: name,
+        bonusPercentage: "???",
+        totalCompensation: "???",
+        totalBonus: "Total bonus"
+      }
+      newObj.push(bonusCalc);
+    
+    }
+  }
 
-}
+  return newObj; 
+  
+
+  // return new object with bonus results
+ }
+
+console.log(calculateIndividualEmployeeBonus(employees));
+console.log(calculateIndividualEmployeeBonus(employees,"Atticus"));
+
+ 
